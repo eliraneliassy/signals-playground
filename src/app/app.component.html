@@ -1,0 +1,17 @@
+<div>
+    Counter is: {{state().counter}}
+</div>
+
+<div>
+    Double Counter is: {{doubleCounter()}}
+</div>
+
+<div>
+    Timer is: {{timer()}}
+</div>
+
+<div *ngIf="state$ | async as state">
+    State is: {{state | json}}
+</div>
+
+<button (click)="plus()">Plus</button>
